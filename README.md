@@ -25,3 +25,9 @@
 ```bash
 python triangle-sides-height.py
 ```
+
+## テスト
+
+```bash
+python -m pytest test_triangle.py -v
+```
