@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
   # 直角マーク
   sq = 0.12
-  ax.plot([C[0], C[0] + sq], [0, 0], 'k-', linewidth=1)
+  ax.plot([C[0], C[0] + sq], [sq, sq], 'k-', linewidth=1)
   ax.plot([C[0] + sq, C[0] + sq], [0, sq], 'k-', linewidth=1)
 
   # 頂点ラベル
