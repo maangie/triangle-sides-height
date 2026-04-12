@@ -4,7 +4,6 @@ import matplotlib
 
 matplotlib.rcParams['font.family'] = 'Hiragino Sans'
 
-
 def calc_vertices(base, side_bc, height):
   """底辺・右辺・高さから三頂点の座標を返す。
 
