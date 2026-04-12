@@ -6,7 +6,19 @@ matplotlib.rcParams['font.family'] = 'Hiragino Sans'
 
 
 def calc_vertices(base, side_bc, height):
-  """底辺・右辺・高さから三頂点の座標を返す。"""
+  """底辺・右辺・高さから三頂点の座標を返す。
+
+  A を原点、B を底辺右端に固定し、BC の長さと高さから
+  C の x 座標を逆算する。高さの足は底辺 AB 上に垂直に落ちる。
+
+  Args:
+    base: 底辺 AB の長さ (cm)
+    side_bc: 右辺 BC の長さ (cm)
+    height: 頂点 C から底辺 AB への垂直距離 (cm)
+
+  Returns:
+    (A, B, C): 各頂点の (x, y) 座標のタプル
+  """
   # 元ネタ: https://www.threads.com/@vul829_1984/post/DW8tKy7Cdw0
   A = (0.0, 0.0)
   B = (base, 0.0)
@@ -15,7 +27,15 @@ def calc_vertices(base, side_bc, height):
 
 
 def calc_area(base, height):
-  """三角形の面積を返す。"""
+  """三角形の面積を返す。
+
+  Args:
+    base: 底辺の長さ (cm)
+    height: 高さ (cm)
+
+  Returns:
+    面積 = 底辺 × 高さ ÷ 2 (cm²)
+  """
   return base * height / 2
 
 
