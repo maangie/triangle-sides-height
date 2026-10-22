@@ -1,0 +1,12 @@
+[project]
+name = "triangle-sides-height"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
