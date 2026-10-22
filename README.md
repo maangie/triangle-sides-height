@@ -22,12 +22,14 @@
 
 ## 実行方法
 
+依存パッケージは [uv](https://docs.astral.sh/uv/) で管理しています。
+
 ```bash
-python triangle-sides-height.py
+uv run triangle-sides-height.py
 ```
 
 ## テスト
 
 ```bash
-python -m pytest test_triangle.py -v
+uv run pytest test_triangle.py -v
 ```
